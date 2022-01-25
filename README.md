@@ -1,1 +1,1 @@
-# docker-host-command
+# docker-swarm-host-command
