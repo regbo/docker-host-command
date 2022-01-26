@@ -10,7 +10,7 @@ version: '3'
 services:
            
   init:
-    image: 'docker-swarm-host-command:latest'
+    image: 'regbo/docker-swarm-host-command:latest'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     command: ["sh", "-c", "mkdir -p /tmp/this-is-a-test"]
