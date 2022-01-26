@@ -1,6 +1,6 @@
 # docker-swarm-host-command
 
-**WARNING**: A SIMPLE SLIP OF A KEYCOULD CAUES MAJOR ISSUES ON YOUR SWARM HOST, ANY COMMAND ENTERED **WILL BE RUN AS ROOT**
+**WARNING**: ANY COMMAND ENTERED **WILL BE RUN AS ROOT**. A SIMPLE SLIP OF A KEY COULD CAUES MAJOR ISSUES ON YOUR SWARM HOST
 
 However, it's very time consuming to ssh into every machine if you want to run a command on the host. This image runs docker IN docker IN docker to run a command on the host. For example, if you want to create "/tmp/this-is-a-test" on all manager nodes, the following could be added to a stack:
 
