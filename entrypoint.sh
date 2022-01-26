@@ -1,1 +1,1 @@
-docker run --rm --privileged --pid=host docker:latest nsenter -t 1 -m -u -n -i "$@"
+docker run --rm --privileged --net=host --pid=host --ipc=host --volume /:/host docker:latest chroot /host "$@"
