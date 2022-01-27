@@ -5,7 +5,7 @@ services:
   init:
     image: 'regbo/docker-swarm-host-command:latest'
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/run/docker.sock:/var/run/docker.sock
     command: ["sh", "-c", "mkdir -p /tmp/this-is-a-test"]
     deploy:
       mode: global
